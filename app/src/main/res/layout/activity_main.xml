@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fondo2"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.05"
+            android:background="#6750A3"
+            android:fontFamily="sans-serif-condensed"
+            android:text="MI REPRODUCTOR DE MUSICA"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="end">
+        <ImageButton
+            android:id="@+id/btn_explorador"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FFFFFFFF"
+            android:background="@drawable/explorador_de_archivos"
+            android:contentDescription="descripción"/>
+
+        <ImageButton
+            android:id="@+id/btn_lista_reproducción"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FFFFFFFF"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="descripción"
+            android:background="@drawable/lista_reproduccion"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/imagen_volumen"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                app:tint="@color/white"
+                app:srcCompat="@drawable/volumen" />
+            <SeekBar
+                android:id="@+id/barra_volumen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imagen_portada"
+            android:layout_width="wrap_content"
+            app:tint="@color/grey"
+            android:layout_height="200dp"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@drawable/portada" />
+
+
+        <TextView
+            android:id="@+id/nombre_pista"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="REPRODUCIENDO..."
+            android:textAlignment="center"/>
+
+        <SeekBar
+            android:id="@+id/barra_tiempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/btn_anterior"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/anterior"
+            android:contentDescription="descripción"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:id="@+id/btn_retroceder"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FFFFFFFF"
+            android:contentDescription="descripción"
+            android:background="@drawable/retroceder"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:id="@+id/btn_play_plause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="descripción"
+            android:background="@drawable/reproducir"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:id="@+id/btn_avanzar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FFFFFFFF"
+            android:contentDescription="descripción"
+            android:background="@drawable/avanzar"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:id="@+id/btn_siguiente"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="descripción"
+            android:background="@drawable/siguiente"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/btn_repetir"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/repetir"
+            android:contentDescription="descripción"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_detener"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:contentDescription="descripción"
+            android:background="@drawable/detener"
+            android:layout_marginLeft="10dp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
